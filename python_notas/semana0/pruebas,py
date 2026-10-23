@@ -1,0 +1,37 @@
+#en este codigo, haremos purebas sobre como definir funciones ok?
+name = input("what´s your name??: ")
+hello12(name)
+def hello12(to,noob="cagon"):
+    print("hello", to, noob)
+
+#definimos al final la fucnion pero la citamos antes, claramente corre el programa pero marca error
+#entonces notamos que el codigo se ejecuta secuancialmetne
+#ahora que pasa si definimos asi:
+def hello(to):
+    print("hello", name)
+name=input("What´s your name: ") 
+hello(name)
+'''aqui es una coincidencia peligrosa, 
+1.-primero el sistema lee def hello(to): y guarda para despues
+la receta sabiendo que tiene el parametro to, todavia no lee el codgio de la funcion (no cocina la receta
+2.- ejecuta name=input(...) y guarda la entrada del usuario en name
+3.- ejecuta las lineas de codigo de la funcion hello(name) solo que aqui name=to
+es una conicidencia peligrosa, puesto que como to no se usa en la funcion no marca error
+sin embargo al ya saber quien es name, ejecuta el codigo sin problemas
+'''
+#AQUI ES DONDE ENTRA UN MIND BLOWING, SI CADA QUE TENGO QUE USAR UNA FUNCION LA TENGO QUE DEFINIR ARRIBA
+#ENTOCNES ESGTAMOS CODING IN REVERS, FIRST YOU WRITE YPUR CODE, THEN NOTICE YOU NEED ANOTHER FUNCTION
+#AND THEN GO BACK AND DEFINE IT BECAUSE THE CODE IS NOT GONNA WORK Y YOU DEFINE IT AFTER (DESPUÉS)
+#por eso  usa mos def main(): (signifca principal en español)  donde colocaremos nuestro
+#programa normal y debajo de el main colocalremos todas las demas cajitas de funciones definidas
+
+def main():
+    name=input("what´s your name? :")
+    hello(name)
+#fuera de identación definimos...
+def hello(to):
+    print("hello", to)
+#PERO IMPORTANTE TODO ESTO NO VA A FUNCIONAR SI NO LLAMAS A MAIN O ALGUNA OTRA
+main() #si llamas a hello, pues imprimira error porque no esta definido "to"
+hello()
+#pero si pones hello(name) tampoco funciona porque no sabe quien es main
