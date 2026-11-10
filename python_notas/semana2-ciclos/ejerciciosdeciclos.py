@@ -84,10 +84,34 @@ def main6():
         respuesta = input("¿Deseas calcular otro? ").lower().strip()
         if respuesta == "no":
             break
-main6()
+
 #En este programa aprendi que no es necesario colocar un else, porque en caso de que sea si, el ciclo while se 
 #repite indefinidamente, solo queremos deternerlo si es no. También es mejor si colcoas así la conidción:
 #if respuesta != "si": break, porque solo queremos que haga break son si
 
 #.-.-.-.-.-.-.-.-.-Nivel 3.-.-.-.-.-.-.-.-.-
 #1.-
+def main7():
+    suma = 0
+    contador = 0
+    while True:
+        numero= int(input("Escribe un número:"))
+        suma += numero
+        contador += 1
+        if numero == 0:
+            break
+    print(contador)
+    print(suma)
+#Hay una forma de hacer que no cuente el cero y es colocando el if antes de la suma y el contador.
+def main7():
+    suma = 0
+    contador = 0
+    while True:
+        numero= int(input("Escribe un número:"))
+        if numero == 0:
+            break
+        suma += numero
+        contador += 1
+    print(contador)
+    print(suma)
+main7()
