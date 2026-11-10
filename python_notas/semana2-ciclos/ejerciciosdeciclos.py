@@ -54,3 +54,40 @@ def main3():
 
 #-.-.-.-.-Nivel 2:.-.-.-.-.-.
 #1.-
+def main4():
+    contador = 0
+    for i in range(1,101):
+        contador += i
+    print(contador)
+
+#2.-
+def main5():
+    def main():
+        numero = int(input("Número para calcular factorial: "))
+        respuesta = factorial(numero)
+        imprimir_respuesta(respuesta)
+    def factorial(n):
+        resultado = 1
+        for i in range(1,n+1):
+            resultado *= i
+        return resultado
+    def imprimir_respuesta(r):
+        print(r)
+    main()
+
+#3.-
+def main6():
+    while True:
+        numero = int(input("Número para calcular su tabla de multiplicar: "))
+        for i in range(1, 11):
+            print(f"{i}*{numero} = {i*numero}")
+        respuesta = input("¿Deseas calcular otro? ").lower().strip()
+        if respuesta == "no":
+            break
+main6()
+#En este programa aprendi que no es necesario colocar un else, porque en caso de que sea si, el ciclo while se 
+#repite indefinidamente, solo queremos deternerlo si es no. También es mejor si colcoas así la conidción:
+#if respuesta != "si": break, porque solo queremos que haga break son si
+
+#.-.-.-.-.-.-.-.-.-Nivel 3.-.-.-.-.-.-.-.-.-
+#1.-
