@@ -144,5 +144,5 @@ def main9():
 
 #2.-
 def main10():
-    
+    for i in raqnge
 main10()
