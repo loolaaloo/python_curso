@@ -144,5 +144,18 @@ def main9():
 
 #2.-
 def main10():
-    for i in raqnge
-main10()
+    n = 0
+    for j in range(1,6):
+        n+=1
+        print(f"Tabla del {j}")
+        for i in range(1,11):
+            print(f"{(n)}*{i} = {n*i}")
+        print()
+
+#La IA me corrigió, no es necesaria la variable n:
+def main10e():
+    for i in range(1,6):
+        print(f"Tabla del {i}")
+        for j in range(1,11):
+            print(f"{i}*{j} = {j*i}")
+        print()
