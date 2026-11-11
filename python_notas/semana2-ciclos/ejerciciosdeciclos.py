@@ -159,3 +159,17 @@ def main10e():
         for j in range(1,11):
             print(f"{i}*{j} = {j*i}")
         print()
+
+#.-.-.-.-.-.-.- Reto final .-.-.-.-.--.-
+def reto_final():
+    def main():
+        numero = int(input("Dame un número: "))
+        numero_primo(numero)
+    def numero_primo(n):
+        for i in range(2,n):
+            if n % i == 0:
+                break
+            elif 
+        print("no es primo...")
+    main()
+reto_final()
