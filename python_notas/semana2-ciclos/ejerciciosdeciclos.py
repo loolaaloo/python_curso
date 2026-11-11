@@ -114,4 +114,35 @@ def main7():
         contador += 1
     print(contador)
     print(suma)
-main7()
+
+#2.-
+def main8():
+    import random
+    lista = list(range(1,101))
+    eleccion = random.choice(lista)
+    num_intentos = 0
+    while True:
+       eleccion_usuario = int(input("Adivina el número: "))
+       num_intentos += 1
+       if eleccion_usuario == eleccion:
+           print("Adivinaste...")
+           print(f"número de intentos: {num_intentos}")
+           break
+       elif eleccion_usuario < eleccion:
+           print("Más alto...")
+       elif eleccion_usuario > eleccion: 
+            print("Más bajo...")
+
+#.-.-.-.-.-.-.-.Nivel 4 .-.-.-.-.-.-.-.-
+#1.-
+def main9():
+    altura = int(input("Elige la altura: "))
+    for i in range(1,altura+1):
+        for j in range(i):
+            print("#", end="")
+        print()
+
+#2.-
+def main10():
+    
+main10()
