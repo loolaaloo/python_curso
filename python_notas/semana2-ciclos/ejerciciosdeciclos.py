@@ -131,7 +131,7 @@ def main8():
        elif eleccion_usuario < eleccion:
            print("Más alto...")
        elif eleccion_usuario > eleccion: 
-            print("Más bajo...")
+           print("Más bajo...")
 
 #.-.-.-.-.-.-.-.Nivel 4 .-.-.-.-.-.-.-.-
 #1.-
@@ -180,8 +180,8 @@ def reto_final():
                 print("Es primo")
             else:
                 print("No es primo")
-            input("¿deseas ingresar otro número?: ")
-        
-
+            respuesta = input("¿deseas ingresar otro número?: ").lower().strip()
+            if respuesta == "no":
+                break
     main()
 reto_final()
