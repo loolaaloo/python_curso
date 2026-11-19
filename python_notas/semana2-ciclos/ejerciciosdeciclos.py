@@ -161,15 +161,27 @@ def main10e():
         print()
 
 #.-.-.-.-.-.-.- Reto final .-.-.-.-.--.-
+#Para que un número sea primo solo debe ser divisible exacto entre 1 y si mismo.
+#Dividir exacto: significa que sobrea cero.
+#Hay que buscar si algún otro número lo divide, si es así, entonces no es primo.
 def reto_final():
-    def main():
-        numero = int(input("Dame un número: "))
-        numero_primo(numero)
-    def numero_primo(n):
-        for i in range(2,n):
+    def es_primo(n):
+        if n < 2:
+            return False
+        for i in range(2, n):
             if n % i == 0:
-                break
-            elif 
-        print("no es primo...")
+                return False
+        return True
+
+    def main():
+        while True:
+            numero = int(input("Dame un número: "))
+            if es_primo(numero):
+                print("Es primo")
+            else:
+                print("No es primo")
+            input("¿deseas ingresar otro número?: ")
+        
+
     main()
 reto_final()
