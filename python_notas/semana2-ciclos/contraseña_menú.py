@@ -69,9 +69,31 @@ def mainA():
             if respuesta == "no":
                 break
     programa()
-mainA()
+#mainA()
 
 #Ejercicio B:
 """
-
+1. Se repite el menu
+2. Se detiene cuando el usuario escribe 3
+3. No debe recordar nada entre vueltas
 """
+
+def mainB():
+    def menu():
+        while True:
+            print("""1) Saludar
+2) Despedirse
+3) Salir""", end="\n\n")
+            eleccion = input("Elija una opción (1,2,3): ")
+            match eleccion:
+                case "1":
+                    print("Hola...", end="\n\n")
+                case "2":
+                    print("Adiós...", end="\n\n")
+                case "3":
+                    break
+                case _:
+                    print("opción inválida...")
+                    break
+    menu()
+mainB()
