@@ -112,7 +112,7 @@ def main5():
                 print("Congrats you finish the game!")
         print("That´s the game!")
     main()
-main5()
+#main5()
 
 #También añade la función .pop(), .clear(), .items():
 #.pop() me regresa el valor de el key y borra la key del diccionario
@@ -122,3 +122,14 @@ main5()
 #entonces se detiene e imprime mensaje de fin.
 #En este programa se ejecutan ambos if, es por eso que imprime points y luego acaba
 #Pero si los inviertes, el dicionario borra graphic y ya no es parte de la lista.
+
+def main6():
+    WORDS = {"HOLA" : "4", "ADIOS" : "5", "BUENAS" : "6"}
+    def main():
+        print("Items del diccionario: ")
+        for palabra, letras in WORDS.items(): #generalmente se pone keys, values in WORDS.items(), pero
+            print(f"{palabra} tiene {letras} letras") #acá por facilidad usamos palabra y letras
+    main()
+main6()
+
+#items devuelve un par (item) en el formato (key, value)
