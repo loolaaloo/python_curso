@@ -79,4 +79,10 @@ def main4():
 #solo que te da la versatilidad de agregarlo en la posicion que desees
 #respetando que 0 es el primer elemento de la lista, 1 el segundo y asi sucesivamente.
 def main5():
-    
+    lista = ["pepe", "sech","luigi", "Peach"]
+    lista.insert(0,"tilin")
+#También podemos darle uso a .revers(), que su uso es sencillo
+#invertir el orden de los elementos en la lista. Siendo el primero ahora el ultimo y sucesivamente:
+    lista.reverse()
+    print(lista)
+main5()
