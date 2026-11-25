@@ -51,5 +51,30 @@ def main1():
 
 #Ejercicio 4:
 def main2():
-    
-main2()
+    lista=[]
+    while True:
+        numero = int(input("Escribe un número: "))
+        if numero == 0:
+            break
+        lista.append(numero)
+    print(lista)
+    print(sum(lista))
+    print(max(lista))
+#main2()
+#he aprendido que si la lista esta vacia .max da error, entonces:
+#tambien he aprendido que una lista vacía da false. Por eso podemos
+#mejorar el código.
+def main2x():
+    numeros = []
+    while True:
+        numero = int(input("Escribe un número: "))
+        if numero == 0:
+            break
+        numeros.append(numero)
+    print(numeros)
+    if numeros:
+        print(max(numeros))
+        print(sum(numeros))
+    else: #caso false ( lista vacía )
+        print("lista vacía...")
+main2x()
