@@ -77,4 +77,46 @@ def main2x():
         print(sum(numeros))
     else: #caso false ( lista vacía )
         print("lista vacía...")
-main2x()
+#main2x()
+
+#Ejercicio 5 y 6:
+
+def main3():
+    alumnos = {"pepito" : "6", "toñito" : "9" , "tomasito" : "10"}
+    print(alumnos["toñito"])
+    print(alumnos.get("pepito"))
+    nuevo_alumno = input("Ingrese alumno: ")
+    print(alumnos.get((f"{nuevo_alumno}"), "No existe"))
+#main3()
+
+#Para este ejercicio, aprendí que en un diccionario los values también pueden ser guardados como ints.
+#Puesto que los deje como str con los "", y al ser calificaciones en un futuro para maniobrar con ellas
+#será bueno tenerlas como enteros.
+#IMPORTANTE: También he aprendido que no es necesario colocar f"{}" para la funcion .get
+#nuevo alumno ya es texto, al imprimir (print) la variable que ya es texto, no es necesario.
+
+#Ejercicio  7:
+def main4():
+    alumnos = {"pepito": 7}
+    print(alumnos)
+    alumnos["toñito"] = 8 #notese que ahora son enteros.
+    print(alumnos)
+    alumnos.update({"pepito": 9})
+    print(alumnos)
+#main4()
+
+#Ejercicio 8:
+
+def main5():
+    alumnos = {"pepito": 8, "toñito" : 5, "roberto" : 10, "carlitos" : 7}
+    for alumno in alumnos:
+        print(f"Nombre: {alumno}, calificación: {alumnos[alumno]}")
+    for nombre in alumnos.keys():
+        print(nombre)
+    for calificacion in alumnos.values():
+        print(calificacion)
+#main5()
+
+#Ejercicio 9:
+
+def main6():
