@@ -120,3 +120,9 @@ def main5():
 #Ejercicio 9:
 
 def main6():
+    alumnos = {"pepito": 8, "toñito" : 5, "roberto" : 10, "carlitos" : 7}
+    print(alumnos)
+    calificación = alumnos.pop("toñito")
+    print(calificación)
+    print(alumnos)
+main6()
